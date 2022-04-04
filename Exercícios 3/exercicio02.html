@@ -1,0 +1,26 @@
+<script>
+    //IMCOMPLETO
+    let idade = prompt("Digite sua idade:");
+    let deffisico = prompt("Você possui alguma deficiência física? Digite 1 para SIM ou 2 para NÃO:");
+    let sexo = prompt("Você é um homem ou uma mulher? Digite 1 para MULHER ou digite 2 para Homem:");
+    
+    if (sexo = 1) {
+        let pergunta = prompt("Você é gestante? Digite 1 se SIM ou 2 se NÃO.");
+        if (pergunta = 1) {
+            pergunta1 = 1;
+        } else {
+            pergunta2 = 0
+        }
+
+    if (idade > 60 && deffisico == 1 && pergunta1 == 1) {
+        document.write("Você pode usar a fila preferencial.");
+
+    } else if (idade <= 60 && deffisico == 2 && sexo == 2) {
+        document.write("Você não pode usar a fila preferencial.");
+
+    } else {
+        document.write("Você não pode usar a fila preferencial");
+
+    }
+}
+</script>

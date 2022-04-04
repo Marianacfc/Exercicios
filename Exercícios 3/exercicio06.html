@@ -1,0 +1,18 @@
+<script>
+    let moeda1cent = prompt("Digite quantas moedas de 1 centavo você tem:");
+    let moeda5cent = prompt("Digite quantas moedas de 5 centavo você tem:");
+    let moeda10cent = prompt("Digite quantas moedas de 10 centavo você tem:");
+    let moeda25cent = prompt("Digite quantas moedas de 25 centavo você tem:");
+    let moeda50cent = prompt("Digite quantas moedas de 50 centavo você tem:");
+    let moeda1real = prompt("Digite quantas moedas de 1 real você tem:");
+
+    valor1cent = moeda1cent * 0.01;
+    valor5cent = moeda5cent * 0.05;
+    valor10cent = moeda10cent * 0.10;
+    valor25cent = moeda25cent * 0.25;
+    valor50cent = moeda50cent * 0.50;
+    valor1real = moeda1real * 1.00;
+
+    valortotal = valor1cent + valor5cent + valor10cent + valor25cent + valor50cent + valor1real;
+    document.write(`O total que você economizou R$${valortotal}.`);
+</script>
