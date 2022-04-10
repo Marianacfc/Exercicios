@@ -1,0 +1,10 @@
+<script>
+    let salario = parseFloat(prompt("Digite o valor do salário:"));
+    let desconto = parseFloat(prompt("Digite a faixa de desconto do INSS:"));
+
+    calculaINSS(salario, desconto);
+
+    function calculaINSS (salario, desconto) {
+        document.write((salario) - (salario * desconto % 100));
+    }
+</script>

@@ -1,0 +1,39 @@
+<script>
+    let num1 = prompt("Digite o primeiro número:");
+    let num2 = prompt("Digite o segundo número:");
+    let num3 = prompt("Digite o terceiro número:");
+
+    oMAIORnumero(num1, num2, num3);
+    oMENORnumero(num1, num2, num3);
+
+    function oMAIORnumero(num1, num2, num3) {
+        if (num2 < num1 && num3 < num1) {
+        document.write(`${num1} é o Maior número. `);
+
+    } else if (num1 < num2 && num3 < num2) {
+        document.write(`${num2} é o Maior número. `);
+
+    } else if (num1 < num3 && num2 < num3) {
+        document.write(`${num3} é o Maior número. `);
+
+    } else {
+        document.write(".");
+
+    }
+}
+function oMENORnumero(num1, num2, num3) {
+        if (num2 > num1 && num3 > num1) {
+        document.write(`${num1} é o Menor número.`);
+
+    } else if (num1 > num2 && num3 > num2) {
+        document.write(`${num2} é o Menor número.`);
+
+    } else if (num1 > num3 && num2 > num3) {
+        document.write(`${num3} é o Menor número.`);
+
+    } else {
+        document.write(".");
+
+    }
+}
+</script>

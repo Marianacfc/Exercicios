@@ -1,0 +1,15 @@
+<script>
+    var palavra = prompt("Digite uma palavra:");
+
+    ehPalindromo(palavra);
+
+    function ehPalindromo(palavra) {
+        var palavraInvertida = palavra.split("").reverse().join("");
+    
+        if (palavraInvertida !== palavra) {
+            document.write("NÃO é Palíndromo!");
+        } else {
+            document.write("É Palíndromo!");
+        }
+    }
+</script>
