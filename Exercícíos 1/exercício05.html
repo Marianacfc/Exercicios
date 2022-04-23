@@ -1,0 +1,12 @@
+<script>
+let anoatual = prompt("Digite o ano atual:");
+let anonasc = prompt("Digite o ano que você nasceu:");
+
+let result = parseFloat(anoatual) - parseFloat(anonasc);
+
+if (result >= 18) {
+    document.write("Você poderá votar!" + "<br>");
+  } else {
+    document.write("Você NÃO poderá votar!" + "<br>");
+  }
+</script>
